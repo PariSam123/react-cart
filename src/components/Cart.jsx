@@ -17,6 +17,12 @@ function Cart() {
                 return prev + (discountPrice * item.quantity)
             },0)
             setSubTotal(total)
+            
+            setGst(5)
+            if(total >= 1000){
+                setDc(0)
+                setDiscount(10)
+            }
         }
         getTotal()
     },[cart,subTotal])
