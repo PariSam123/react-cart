@@ -47,7 +47,7 @@ function Cart() {
         setCart([...cart])
     }
 
-    const updateCart = async(cart) => {}
+    //const updateCart = async(cart) => {}
 
     //delete product
     const delItem = (id) => {
